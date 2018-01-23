@@ -1,7 +1,6 @@
 
 body {
     background-color: #222222;
-    width: 100%;
 }
 
 .header-item {
@@ -10,7 +9,7 @@ body {
 }
 
 #title-header {
-    text-size: 0.5em;
+    font-size: 0.5em;
     font-weight: 400;
     color: #6ABED0;
 }
@@ -80,7 +79,6 @@ nav li a:hover {
     -webkit-flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 90%;
 }
 
 .flex-item-nav {
