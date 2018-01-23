@@ -63,11 +63,14 @@ nav li a:hover {
 
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
+
 }
 
 .flex-container-nav {
     padding: 0;
-    margin: 0;
+
+    width: 30%;
+    margin: auto;
     list-style: none;
 
     display: -webkit-box;
@@ -77,15 +80,20 @@ nav li a:hover {
     display: flex;
 
     -webkit-flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .flex-item-nav {
-    width: 50px;
+    display: inline-block;
     margin: 10px;
     text-align: center;
     font-size: 1em;
+
+}
+
+nav {
+    align-items: center;
 }
 
 .flex-item {
@@ -96,4 +104,14 @@ nav li a:hover {
     font-weight: bold;
     font-size: 2em;
     text-align: center;
+}
+
+section ul li a {
+    font-size: 0.7em;
+}
+
+@media only screen and (max-width: 500px) {
+    #title-name{
+        font-size: 2.5em;
+    }
 }
