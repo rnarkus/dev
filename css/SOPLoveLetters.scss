@@ -50,19 +50,21 @@
 .tooltip .tooltiptext {
     visibility: hidden;
     font-family: 'Open Sans', sans-serif;
-    width: 120px;
+    width: 200px;
     background-color: black;
+    opacity: 0.8;
     color: #fff;
     text-align: center;
     border-radius: 3px;
-    padding: 5px 0;
+    padding: 10px 0;
     font-size: 0.7em;
     position: absolute;
     z-index: 1;
 }
 
+
 .tooltip:hover  {
-    color: #6AB456;
+    text-shadow: 2px 2px black;
 }
 
 .tooltip:hover .tooltiptext {
