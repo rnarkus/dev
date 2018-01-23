@@ -24,7 +24,7 @@ body {
     margin-bottom: 45px;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -32,19 +32,19 @@ ul {
     text-align: center;
 }
 
-ul li {
+nav ul li {
     display: inline-block;
     color: #757571;
 }
 
-li a {
+nav li a {
     display: block;
     color: #757571;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
 }
 
-li a:hover {
+nav li a:hover {
     color: #6ABED8;
 }
 

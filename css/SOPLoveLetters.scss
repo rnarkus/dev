@@ -1,72 +1,48 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
+@import "compass/css3";
+
+.text-header {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    font-size: 2em;
 }
 
-ul li {
+.dear-bash {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+#content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tooltip {
+    position: relative;
     display: inline-block;
-    color: #757571;
-}
-
-li a {
-    display: block;
-    color: #757571;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-}
-
-li a:hover {
     color: #6ABED8;
 }
 
-.flex-container {
-    padding: 0;
-    margin: 0;
-    margin-top: 5%;
-    list-style: none;
-
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    -webkit-flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-.flex-container-nav {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    -webkit-flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-item-nav {
-    width: 50px;
-    margin: 10px;
+.tooltip .tooltiptext {
+    visibility: hidden;
+    font-family: 'Open Sans', sans-serif;
+    width: 120px;
+    background-color: black;
+    color: #fff;
     text-align: center;
-    font-size: 1em;
+    border-radius: 3px;
+    padding: 5px 0;
+    font-size: 0.7em;
+    position: absolute;
+    z-index: 1;
 }
 
-.flex-item {
-    background: #6ABED8;
-    padding: 5px;
-    margin-top: 10px;
-    color: #f0f0f0;
-    font-weight: bold;
-    font-size: 2em;
-    text-align: center;
+.tooltip:hover  {
+    color: #6AB456;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
