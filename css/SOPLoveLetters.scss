@@ -50,7 +50,7 @@
 .tooltip .tooltiptext {
     visibility: hidden;
     font-family: 'Open Sans', sans-serif;
-    width: 200px;
+
     background-color: black;
     opacity: 0.8;
     color: #fff;
@@ -74,4 +74,16 @@
 nav ul li, nav li a{
 
     color: whitesmoke;
+}
+
+@media only screen and (max-width: 500px) {
+    #content{
+        width: 90%;
+    }
+    .dear-bash{
+        line-height: 100px;
+    }
+    #title-name{
+        font-size: 2.5em;
+    }
 }

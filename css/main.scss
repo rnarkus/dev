@@ -1,6 +1,7 @@
 
 body {
     background-color: #222222;
+    width: 100%;
 }
 
 .header-item {
@@ -79,6 +80,7 @@ nav li a:hover {
     -webkit-flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    width: 90%;
 }
 
 .flex-item-nav {
