@@ -1,9 +1,25 @@
 @import "compass/css3";
 
+#title-name {
+    color: black;
+}
+
+#title-header {
+    text-size: 0.5em;
+    font-weight: 400;
+    color: whitesmoke;
+    border-style: solid;
+    border-color: #6ABED0;
+    border-radius: 7px;
+    border-width: 5px;
+    width: 100px;
+    background-color: #6ABED0;
+}
+
 .text-header {
     font-family: 'Open Sans', sans-serif;
     color: black;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.1em;
     font-size: 2em;
 }
@@ -11,18 +27,24 @@
 .dear-bash {
     font-family: 'Cedarville Cursive', cursive;
     font-size: 3em;
-    margin-bottom: 0;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 #content {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 300px;
 }
 
 .tooltip {
     position: relative;
     display: inline-block;
-    color: #6ABED8;
+    color: whitesmoke;
 }
 
 .tooltip .tooltiptext {
@@ -45,4 +67,9 @@
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+nav ul li, nav li a{
+
+    color: whitesmoke;
 }
