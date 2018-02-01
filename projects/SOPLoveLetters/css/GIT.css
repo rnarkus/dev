@@ -16,12 +16,12 @@ body {
 }
 
 .frowny{
-    position: absolute;
+    position: relative;
     width: 100px;
     height: 100px;
     transform: rotate(90deg);
     left:60%;
-    top:45%;
+    top:170px;
     font-size: 10em;
     color: rgb(255,59,48);;
     text-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;

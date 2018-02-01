@@ -17,11 +17,11 @@ body {
 }
 
 #github{
-    position: absolute;
+    position: relative;
     width: 100px;
     height: 100px;
     left:60%;
-    top:45%;
+    top:170px;
     font-size: 10em;
     color: whitesmoke;
     text-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;

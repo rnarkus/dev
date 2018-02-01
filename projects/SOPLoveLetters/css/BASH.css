@@ -16,14 +16,14 @@ body {
 }
 
 .heart-shape{
-	position: absolute;
+	position: relative;
 	width: 100px;
 	height: 100px;
 	transform: rotate(45deg);
 	background-color: rgb(255,45,85);
 
     left:60%;
-    top:45%;
+    top:170px;
     z-index: -50;
 }
 .heart-shape:before,.heart-shape:after{
