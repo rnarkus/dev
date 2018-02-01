@@ -63,6 +63,7 @@ nav li a:hover {
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 70px;
 }
 
 .flex-item-nav {

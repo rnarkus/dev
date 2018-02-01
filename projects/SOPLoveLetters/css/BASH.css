@@ -2,9 +2,51 @@
 @import url("SOPLoveLetters.css");
 
 body {
-    background: #cfbeae;
+    background: white;
 }
 
 #content{
+    background-color: rbga(255,255,255,0);
+    border-radius: 50px;
+    border-color: rgb(255,45,85);
 
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.heart-shape{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	transform: rotate(45deg);
+	background-color: rgb(255,45,85);
+
+    left:60%;
+    top:45%;
+    z-index: -50;
+}
+.heart-shape:before,.heart-shape:after{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	content: '';
+	border-radius: 50%;
+	background-color: rgb(255,45,85);
+}
+.heart-shape:before{
+	bottom: 0px;
+	left: -50px;
+}
+.heart-shape:after{
+	top: -50px;
+	right: 0px;
+}
+
+.flex-item-nav, .flex-item-nav a{
+    color: black;
+}
+
+.tooltip{
+    color: rgb(255,45,85);
 }

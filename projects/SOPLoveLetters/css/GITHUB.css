@@ -2,9 +2,35 @@
 @import url("SOPLoveLetters.css");
 
 body {
-    background: #af8988;
+    background: rgb(88,86,214);
 }
 
 #content{
+    background-color: rbga(255,255,255,0);
+    border-radius: 50px;
+    border-color: whitesmoke;
 
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 10px 15px rgba(0, 0, 0, 0.3);
+    color:whitesmoke;
+}
+
+#github{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left:60%;
+    top:45%;
+    font-size: 10em;
+    color: whitesmoke;
+    text-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
+#title-name, .text-header{
+    color: whitesmoke;
+}
+
+.tooltip{
+    color: rgb(0,122,255);
 }
