@@ -2,7 +2,7 @@
 @import url("SOPLoveLetters.css");
 
 body {
-    background: rgb(88,86,214);
+    background: rgb(30,150,214);
 }
 
 #content{
@@ -32,5 +32,5 @@ body {
 }
 
 .tooltip{
-    color: rgb(0,122,255);
+    color: rgb(76,217,100);
 }

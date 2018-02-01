@@ -34,3 +34,9 @@ body {
 .tooltip{
     color: rgb(255,59,48);
 }
+
+.tooltip .tooltiptext {
+    background-color: white;
+    color: black;
+    opacity: 1;
+}
