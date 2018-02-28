@@ -1,0 +1,40 @@
+$icon-layout:horizontal;
+@import 'icon/*.png';
+@include all-icon-sprites(true);
+
+.icon-animation{
+    width: 180px;
+    height: 240px;
+    background: url("../img/icon-s6c41b2f3e7.png") left center;
+    animation: play 1.0s steps(10) infinite;
+    margin: 0 auto;
+}
+
+@keyframes play {
+    100%{
+        background-position: -1800px;
+    }
+}
+
+.koopatroopa-animation{
+    width: 100px;
+    height: 128px;
+    background: url("../img/koopa.png") left center;
+    animation: play2 5s steps(10) infinite;
+    position: relative;
+
+}
+
+@keyframes play2 {
+    100%{
+        background-position: -2000px;
+    }
+}
+
+body{
+    background: url("../img/04FoKF7.png");
+    background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-blend-mode:hard-light;
+}

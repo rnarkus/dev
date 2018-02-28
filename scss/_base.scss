@@ -1,0 +1,119 @@
+@import url("topNavigation.css");
+@include font-face("Avenir", fonts/AvenirNextLTPro, bold, italic, 900);
+
+.flex-container {
+    padding: 0;
+    margin: auto 0;
+    list-style: none;
+
+
+    position: relative;
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+
+
+.flex-item {
+
+    margin: auto 0;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: left;
+    top: -100%;
+    position: relative;
+    border: 2px black;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 40px;
+    height: 40vh;
+    width: 20vw;
+    max-width: 400px;
+    min-width: 200px;
+    hyphens: auto;
+    background: #e0e0e0;
+    font-family: 'Avenir';
+    font-weight: 900;
+    font-size: 3em;
+    h3{
+        line-height: 50px;
+    }
+    p{
+        font-weight: 400;
+        color: darkgrey;
+        margin-bottom: 20%;
+        line-height: 20px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        display: inline-block; /*or block*/
+
+    }
+
+
+
+
+    &:nth-of-type(1) {
+        a:nth-of-type(1):hover{
+           @include text-gradient( $color-link1 , $color-link1-2);
+       }
+       a:nth-of-type(2):hover{
+           color: $color-link1;
+       }
+    }
+
+    &:nth-of-type(2){
+        a:hover{
+           @include text-gradient( $color-link2 , $color-link2-2);
+        }
+        a:nth-of-type(2):hover{
+            color: $color-link2;
+        }
+
+    }
+    &:nth-of-type(3){
+        a:hover{
+           @include text-gradient( $color-link3 , $color-link3-2);
+        }
+        a:nth-of-type(2):hover{
+            color: $color-link3;
+        }
+
+    }
+    &:nth-of-type(4){
+        a:hover{
+           @include text-gradient( $color-link4 , $color-link4-2);
+        }
+        a:nth-of-type(2):hover{
+            color: $color-link4;
+        }
+
+    }
+
+}
+
+#title-name {
+    @include text-gradient( $color-link4 , $color-link4-2);
+}
+
+
+@include mobile-only {
+    #title-name{
+        font-size: 2.5em;
+    }
+    .flex-container-nav {
+        width: 80%
+    }
+
+    .flex-item{
+        width: 60vw;
+    }
+    }

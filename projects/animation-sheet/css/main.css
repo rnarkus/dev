@@ -1,0 +1,185 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.icon-sprite, .icon-IMG_1145, .icon-IMG_1146, .icon-IMG_1147, .icon-IMG_1148, .icon-IMG_1150, .icon-IMG_1151, .icon-IMG_1152, .icon-IMG_1158, .icon-IMG_1159, .icon-IMG_1160 {
+  background-image: url('../img/icon-s6c41b2f3e7.png');
+  background-repeat: no-repeat;
+}
+
+.icon-IMG_1145 {
+  background-position: 0 0;
+  height: 240px;
+  width: 180px;
+}
+
+.icon-IMG_1146 {
+  background-position: -180px 0;
+  height: 240px;
+  width: 180px;
+}
+
+.icon-IMG_1147 {
+  background-position: -360px 0;
+  height: 240px;
+  width: 180px;
+}
+
+.icon-IMG_1148 {
+  background-position: -540px 0;
+  height: 240px;
+  width: 180px;
+}
+
+.icon-IMG_1150 {
+  background-position: -720px 0;
+  height: 240px;
+  width: 180px;
+}
+
+.icon-IMG_1151 {
+  background-position: -900px 0;
+  height: 240px;
+  width: 180px;
+}
+
+.icon-IMG_1152 {
+  background-position: -1080px 0;
+  height: 240px;
+  width: 180px;
+}
+
+.icon-IMG_1158 {
+  background-position: -1260px 0;
+  height: 240px;
+  width: 180px;
+}
+
+.icon-IMG_1159 {
+  background-position: -1440px 0;
+  height: 240px;
+  width: 180px;
+}
+
+.icon-IMG_1160 {
+  background-position: -1620px 0;
+  height: 240px;
+  width: 180px;
+}
+
+.icon-animation {
+  width: 180px;
+  height: 240px;
+  background: url("../img/icon-s6c41b2f3e7.png") left center;
+  animation: play 1s steps(10) infinite;
+  margin: 0 auto;
+}
+
+@keyframes play {
+  100% {
+    background-position: -1800px;
+  }
+}
+.koopatroopa-animation {
+  width: 100px;
+  height: 128px;
+  background: url("../img/koopa.png") left center;
+  animation: play2 5s steps(10) infinite;
+  position: relative;
+}
+
+@keyframes play2 {
+  100% {
+    background-position: -2000px;
+  }
+}
+body {
+  background: url("../img/04FoKF7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: hard-light;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url('../fonts/bold?1519841109');
+  src: url('../fonts/bold?&1519841109#iefix') format('embedded-opentype'), fonts/AvenirNextLTPro;
+  font-weight: italic;
+  font-style: 900;
+}
+h1 {
+  font-family: 'Avenir', cursive;
+  font-weight: 900;
+  font-size: 5em;
+  padding: 5%;
+  color: white;
+  text-shadow: 2px 2px 20px black;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  padding: 2%;
+  color: white;
+  text-shadow: 2px 2px 20px black;
+}
+
+header {
+  text-align: center;
+}
+
+.wrapper {
+  text-align: center;
+}

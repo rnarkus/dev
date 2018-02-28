@@ -9,9 +9,11 @@ body {
 }
 
 #title-header {
-    font-size: 0.5em;
+    font-size: 1em;
     font-weight: 400;
     color: #6ABED0;
+    position: absolute;
+    text-align: center;
 }
 
 #title-name {
@@ -20,7 +22,7 @@ body {
     font-style: italic;
     font-size: 4em;
     letter-spacing: 0.3em;
-    margin-bottom: 45px;
+
 }
 
 nav ul {
@@ -33,12 +35,12 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    color: #757571;
+    color: whitesmoke;
 }
 
 nav li a {
     display: block;
-    color: #757571;
+    color: whitesmoke;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
 }

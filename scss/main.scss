@@ -1,0 +1,33 @@
+@import "compass/css3";
+@import "compass/reset";
+@import "variables";
+@import "mixins";
+@import "gradient-mixins";
+@import "base";
+
+
+h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5em;
+    padding: 10%;
+    background-color: black;
+    color: whitesmoke;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+    padding: 6%;
+}
+
+header{
+    text-align: center;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+p {
+    padding-top: 10%;
+    font-size: 0.3em;
+    color: lightgrey;
+}

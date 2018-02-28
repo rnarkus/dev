@@ -1,0 +1,30 @@
+@import "compass/css3";
+@import "compass/reset";
+@import "variables";
+@import "mixins";
+@import "base";
+
+@include font-face("Avenir", fonts/AvenirNextLTPro, bold, italic, 900);
+
+h1{
+    font-family: 'Avenir', cursive;
+    font-weight: 900;
+    font-size: 5em;
+    padding: 5%;
+    color: white;
+    text-shadow: 2px 2px 20px black;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+    padding: 2%;
+    color: white;
+    text-shadow: 2px 2px 20px black;
+}
+
+header{
+    text-align: center;
+}
+
+.wrapper{
+    text-align: center;
+}
