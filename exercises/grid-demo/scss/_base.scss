@@ -1,0 +1,43 @@
+body {
+    margin: 40px;
+}
+header,
+nav,
+main,
+section,
+aside,
+footer {
+    border: solid 1px white;
+    border-radius: 10px;
+    position: relative;
+    min-height: 200px;
+
+    &::after{
+        @include info;
+    }
+}
+
+header{
+    background: var(--page-bg);
+    &::after{content: "header";}
+}
+
+nav{
+    background: var(--nav-bg);
+    &::after{content: "nav";}
+}
+
+main{
+    background: var(--main-bg);
+    &::after{content: "main";}
+}
+
+aside{
+    background: var(--aside-bg);
+    &::after{content: "aside";}
+}
+
+footer{
+    background: var(--footer-bg);
+    &::after{content: "footer";}
+}

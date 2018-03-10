@@ -1,119 +1,37 @@
-@import url("topNavigation.css");
-@include font-face("Avenir", fonts/AvenirNextLTPro, bold, italic, 900);
 
-.flex-container {
-    padding: 0;
-    margin: auto 0;
-    list-style: none;
+body {
+    background: linear-gradient(270deg, #536976, #292e49);
+    animation: AnimationName 30s ease infinite;}
+#main{
+    background-color: rgba(255,255,255,0.9);
+    #title-name {font-family: 'Montserrat',sans-serif; font-size: 3em; font-style: italic; font-weight: 900; letter-spacing: 1vw; line-height: 70px;
+        margin-bottom: 20px;
+        @include text-gradient(#536976, #292e49);
+        animation: colorchange 50s infinite;}
+    p{font-family: 'Muli',sans-serif; font-weight: 400;
+      color: #6a6969;}}
 
+.grid-item {
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    background:white;
+    @include mobile-only {width: 60vw; margin: 20px 40px 20px 40px;}
+    &:hover #header-item1{&:nth-of-type(1){@include text-gradient( $color-link1 , $color-link1-2);}}
+    &:hover #header-item2{&:nth-of-type(1){@include text-gradient( $color-link2 , $color-link2-2);}}
+    &:hover #header-item3{&:nth-of-type(1){@include text-gradient( $color-link3 , $color-link3-2);}}
+    &:hover #header-item4{&:nth-of-type(1){@include text-gradient( $color-link4 , $color-link4-2);}}
+    &:hover #header-item5{&:nth-of-type(1){@include text-gradient( $color-link2 , $color-link2-2);}}
 
-    position: relative;
-    display:flex;
-    flex-wrap:wrap;
-    text-align:center;
-    justify-content: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    &:hover{box-shadow: 0px 0px 20px rgba(0,0,0,0.3);}
 
-}
-
-
-
-.flex-item {
-
-    margin: auto 0;
-    color: #f0f0f0;
-    font-weight: bold;
-    font-size: 2em;
-    text-align: left;
-    top: -100%;
-    position: relative;
-    border: 2px black;
-    border-radius: 20px;
-    padding: 50px;
-    margin: 40px;
-    height: 40vh;
-    width: 20vw;
-    max-width: 400px;
-    min-width: 200px;
-    hyphens: auto;
-    background: #e0e0e0;
-    font-family: 'Avenir';
-    font-weight: 900;
-    font-size: 3em;
-    h3{
-        line-height: 50px;
+    .grid-item-info{font-family: 'Muli',sans-serif;font-weight: 400;
+        color:  #6a6969;
     }
-    p{
-        font-weight: 400;
-        color: darkgrey;
-        margin-bottom: 20%;
-        line-height: 20px;
-    }
+    a {text-decoration: none; font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 1.5em;
+        display: inline-block;
+        hyphens: auto;
+        color: #333435;}}
 
-    a {
-        color: black;
-        text-decoration: none;
-        display: inline-block; /*or block*/
-
-    }
-
-
-
-
-    &:nth-of-type(1) {
-        a:nth-of-type(1):hover{
-           @include text-gradient( $color-link1 , $color-link1-2);
-       }
-       a:nth-of-type(2):hover{
-           color: $color-link1;
-       }
-    }
-
-    &:nth-of-type(2){
-        a:hover{
-           @include text-gradient( $color-link2 , $color-link2-2);
-        }
-        a:nth-of-type(2):hover{
-            color: $color-link2;
-        }
-
-    }
-    &:nth-of-type(3){
-        a:hover{
-           @include text-gradient( $color-link3 , $color-link3-2);
-        }
-        a:nth-of-type(2):hover{
-            color: $color-link3;
-        }
-
-    }
-    &:nth-of-type(4){
-        a:hover{
-           @include text-gradient( $color-link4 , $color-link4-2);
-        }
-        a:nth-of-type(2):hover{
-            color: $color-link4;
-        }
-
-    }
-
-}
-
-#title-name {
-    @include text-gradient( $color-link4 , $color-link4-2);
-}
-
-
-@include mobile-only {
-    #title-name{
-        font-size: 2.5em;
-    }
-    .flex-container-nav {
-        width: 80%
-    }
-
-    .flex-item{
-        width: 60vw;
-    }
-    }
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}}

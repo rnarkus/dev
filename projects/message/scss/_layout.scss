@@ -1,0 +1,21 @@
+.site{
+    display: grid;
+
+    grid-gap: 1em;
+
+    grid-template-areas:
+        "item-1 item-1"
+        "item-2 item-2"
+        "light dark";
+
+    @include tablet-portrait-and-below {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "item-1"
+        "item-2"
+        "light"
+        "dark";
+
+    }
+
+}

@@ -1,0 +1,43 @@
+
+.header-item{margin-bottom: 20px;}
+.wrapper{
+    width:100%;
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+#main{
+    text-align: center;
+    padding: 2%;
+    p{line-height: 30px;margin: 0 20% 0 20%;}
+}
+
+.grid-container {
+      grid-column: 1 / 3;
+      grid-row: 5 / 6;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 0.5rem;
+      margin: 3% 10% 0 10%;
+      @include tablet-only {grid-template-columns: repeat(2,1fr);}
+      @include mobile-only {grid-template-columns: repeat(1,1fr);}
+}
+.grid-item {
+    padding: 30px;
+    margin: auto 0;
+    text-align: left;
+    top: -100%;
+    position: relative;
+    border-radius: 20px;
+    margin: 15px;
+    .grid-item-info{
+        margin-bottom: 20%;
+        line-height: 20px;
+    }
+}

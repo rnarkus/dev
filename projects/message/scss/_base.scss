@@ -1,0 +1,131 @@
+@include font-face(Jedi, url("../fonts/Starjedi.ttf") format("truetype"));
+@include font-face(JediBody, url("../fonts/SerifGothicStd-Bold.otf"));
+body {
+    margin: 40px;
+    margin-top: 100px;
+    background: url('../img/stars.jpg');
+    justify-content: center;
+}
+h2,h3{
+    font-family: Jedi;
+    font-size: 3em;
+    line-height: 50px;
+    margin: 0 0 20px 0;
+}
+p{
+    font-family: JediBody;
+
+    font-size: 1.3em;
+}
+#item-title{
+    img{
+        width: 75%;
+        display:block;
+        margin:auto;
+        margin-top:10%;
+        max-width: 400px;
+    }
+}
+.hr{
+        margin: 40px;
+        color:white;
+}
+.icon{
+    font-family: Jedi;
+    font-size: 10em;
+}
+.lightdark{
+    color: #F5D83C;
+    text-align: center;
+}
+.grid-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    img{
+        max-width: 90px;
+        padding: 10px;
+    }
+}
+.plus {
+    background-color: #FF8024;
+    border: none;
+    color: whitesmoke;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    &:hover{
+        background-color: whitesmoke;
+        color: #FF8024;
+    }
+}
+.site{
+    .item{
+        min-height: 100px;
+        div{
+            border-radius: 20px;
+        }
+        @include mobile-only{max-width: 80vw;}
+    }
+    #item-1{
+        display: flex;
+        color: lightgrey;
+        justify-content: space-around;
+        padding: 20px;
+        grid-area: item-1;
+        .icon{
+            color: var(--light-rebels-color);
+        }
+        img{
+            max-width: 300px;
+            padding-left: 20px;
+        }
+        div{
+            padding: 20px;
+            color: var(--light-font-color);
+        }
+        @include mobile-only{flex-direction: column;}
+    }
+    #item-2{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        grid-area: item-2;
+        .icon{
+            color: var(--dark-empire-color);
+        }
+        img{
+            max-width: 300px;
+            padding-right: 20px;
+        }
+        div{
+            padding: 20px;
+            color: var(--dark-font-color);
+        }
+        @include mobile-only{flex-direction: column;}
+    }
+    #item-light{
+        grid-area: light;
+        div{
+            background: var(--lightside-bg);
+            padding: 40px;
+        }
+    }
+
+    #item-dark{
+        grid-area: dark;
+        div{
+            background: var(--darkside-bg);
+            padding: 40px;
+        }
+        @include mobile-only{.hr{visibility: hidden;}}
+        #hr-bottom{
+            display: hidden;
+        }
+    }
+
+}

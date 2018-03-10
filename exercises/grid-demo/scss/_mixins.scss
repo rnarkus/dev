@@ -1,0 +1,14 @@
+
+@mixin info {
+    display: block;
+    position: absolute;
+    font-family: "Input Mono", "Courier New", Courier, monospace;
+    background: var(--info-bg);
+    color: var(--info-txt);
+    top: 1em;
+    left: 1em;
+    height: 1.25em;
+    width: auto;
+    padding: 0.25em 0.5em;
+    border-radius: 5px;
+}

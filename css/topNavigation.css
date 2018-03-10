@@ -1,7 +1,4 @@
 
-body {
-    background-color: #222222;
-}
 
 .header-item {
     font-family: 'Open Sans', sans-serif;
@@ -18,11 +15,7 @@ body {
 
 #title-name {
     color: #f0f0f0;
-    font-weight: 800;
-    font-style: italic;
-    font-size: 4em;
-    letter-spacing: 0.3em;
-
+    font-weight: 800; font-style: italic; font-size: 4em; letter-spacing: 0.3em;
 }
 
 nav ul {
@@ -50,19 +43,11 @@ nav li a:hover {
 }
 
 .flex-container-nav {
-    padding: 0;
-
+    padding: 0; margin: auto;
     width: 30%;
-    margin: auto;
     list-style: none;
-
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-
-    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 70px;
@@ -73,5 +58,4 @@ nav li a:hover {
     margin: 10px;
     text-align: center;
     font-size: 1em;
-
 }

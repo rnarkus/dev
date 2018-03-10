@@ -1,0 +1,235 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+:root {
+  --item-1: #F5D83C;
+  --item-2: #42B8AA;
+  --item-3: #1F174E;
+  --lightside-bg: #42B8AA;
+  --darkside-bg: #C6152F;
+  --dark-font-color: whitesmoke;
+  --dark-empire-color: #C6152F;
+  --light-font-color: whitesmoke;
+  --light-rebels-color: #EAD4AE;
+}
+
+@font-face {
+  font-family: "Jedi";
+  src: url("../fonts/Starjedi.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JediBody";
+  src: url("../fonts/SerifGothicStd-Bold.otf");
+}
+body {
+  margin: 40px;
+  margin-top: 100px;
+  background: url("../img/stars.jpg");
+  justify-content: center;
+}
+
+h2, h3 {
+  font-family: Jedi;
+  font-size: 3em;
+  line-height: 50px;
+  margin: 0 0 20px 0;
+}
+
+p {
+  font-family: JediBody;
+  font-size: 1.3em;
+}
+
+#item-title img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  max-width: 400px;
+}
+
+.hr {
+  margin: 40px;
+  color: white;
+}
+
+.icon {
+  font-family: Jedi;
+  font-size: 10em;
+}
+
+.lightdark {
+  color: #F5D83C;
+  text-align: center;
+}
+
+.grid-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.grid-img img {
+  max-width: 90px;
+  padding: 10px;
+}
+
+.plus {
+  background-color: #FF8024;
+  border: none;
+  color: whitesmoke;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.plus:hover {
+  background-color: whitesmoke;
+  color: #FF8024;
+}
+
+.site .item {
+  min-height: 100px;
+}
+.site .item div {
+  border-radius: 20px;
+}
+@media (max-width: 480px) {
+  .site .item {
+    max-width: 80vw;
+  }
+}
+.site #item-1 {
+  display: flex;
+  color: lightgrey;
+  justify-content: space-around;
+  padding: 20px;
+  grid-area: item-1;
+}
+.site #item-1 .icon {
+  color: var(--light-rebels-color);
+}
+.site #item-1 img {
+  max-width: 300px;
+  padding-left: 20px;
+}
+.site #item-1 div {
+  padding: 20px;
+  color: var(--light-font-color);
+}
+@media (max-width: 480px) {
+  .site #item-1 {
+    flex-direction: column;
+  }
+}
+.site #item-2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  grid-area: item-2;
+}
+.site #item-2 .icon {
+  color: var(--dark-empire-color);
+}
+.site #item-2 img {
+  max-width: 300px;
+  padding-right: 20px;
+}
+.site #item-2 div {
+  padding: 20px;
+  color: var(--dark-font-color);
+}
+@media (max-width: 480px) {
+  .site #item-2 {
+    flex-direction: column;
+  }
+}
+.site #item-light {
+  grid-area: light;
+}
+.site #item-light div {
+  background: var(--lightside-bg);
+  padding: 40px;
+}
+.site #item-dark {
+  grid-area: dark;
+}
+.site #item-dark div {
+  background: var(--darkside-bg);
+  padding: 40px;
+}
+@media (max-width: 480px) {
+  .site #item-dark .hr {
+    visibility: hidden;
+  }
+}
+.site #item-dark #hr-bottom {
+  display: hidden;
+}
+
+.site {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas: "item-1 item-1" "item-2 item-2" "light dark";
+}
+@media only screen and (max-width: 851px) {
+  .site {
+    grid-template-columns: 1fr;
+    grid-template-areas: "item-1" "item-2" "light" "dark";
+  }
+}
