@@ -1,19 +1,19 @@
 
 body {
-    background: linear-gradient(270deg, #536976, #292e49);
-    animation: AnimationName 30s ease infinite;}
+    background: $background-color;}
 #main{
-    background-color: rgba(255,255,255,0.9);
+    background-color: $main-bg;
     #title-name {font-family: 'Montserrat',sans-serif; font-size: 3em; font-style: italic; font-weight: 900; letter-spacing: 1vw; line-height: 70px;
         margin-bottom: 20px;
-        @include text-gradient(#536976, #292e49);
+        color: $title-color;
         animation: colorchange 50s infinite;}
     p{font-family: 'Muli',sans-serif; font-weight: 400;
-      color: #6a6969;}}
+      color: $title-color ;}}
 
 .grid-item {
     box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
-    background:white;
+    background:#FDF3E7;
+    color: $title-color;
     @include mobile-only {width: 60vw; margin: 20px 40px 20px 40px;}
     &:hover #header-item1{&:nth-of-type(1){@include text-gradient( $color-link1 , $color-link1-2);}}
     &:hover #header-item2{&:nth-of-type(1){@include text-gradient( $color-link2 , $color-link2-2);}}
@@ -24,14 +24,9 @@ body {
     &:hover{box-shadow: 0px 0px 20px rgba(0,0,0,0.3);}
 
     .grid-item-info{font-family: 'Muli',sans-serif;font-weight: 400;
-        color:  #6a6969;
+        color:  $description-txt;
     }
-    a {text-decoration: none; font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 1.5em;
+    a {text-decoration: none; font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 2em; font-variant: small-caps;
         display: inline-block;
         hyphens: auto;
-        color: #333435;}}
-
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}}
+        color: $title-color}}
