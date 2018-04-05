@@ -7,12 +7,43 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115885875-1"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', 'UA-115885875-1');
+
+          var config = {
+              apiKey: "AIzaSyBiETOgk25xfI1H_47qZItiwOTavzMLno0",
+              authDomain: "ounter-d4ced.firebaseapp.com",
+              databaseURL: "https://ounter-d4ced.firebaseio.com",
+              projectId: "ounter-d4ced",
+              storageBucket: "",
+              messagingSenderId: "680170005716"
+        };
+        firebase.initializeApp(config);
+
+          var databaseRef = firebase.database()
+
+
+            function myFunctionDark() {
+                databaseRef.ref('counterDark').transaction(function(counterDark) {
+                      counterDark = counterDark + 1;
+                      document.getElementById("plusDark").innerHTML = counterDark;
+                      return counterDark;
+                });
+
+            }
+            function myFunctionLight() {
+                databaseRef.ref('counterLight').transaction(function(counterLight) {
+                      counterLight = counterLight + 1;
+                      document.getElementById("plusLight").innerHTML = counterLight;
+                      return counterLight;
+                });
+
+            }
         </script>
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -62,7 +93,8 @@
                     <img src="img/princess-leia.svg" alt="">
                 </div>
 
-                <button class="plus">Join Us!</button>
+                <button type="button" class="plus" onclick="myFunctionLight()">Join Us!</button>
+                <p class="counter"><span id="plusLight"></span> Rebels</p>
             </div>
         </div>
         <div id="item-dark" class="item">
@@ -77,7 +109,10 @@
                     <img src="img/stormtrooper.svg" alt="">
                 </div>
 
-                <button class="plus">Join Us!</button>
+
+                <button type="button" class="plus" onclick="myFunctionDark()">Join Us!</button>
+                <p class="counter"><span id="plusDark"></span> Stormtroopers</p>
+
 
             </div>
         </div>
