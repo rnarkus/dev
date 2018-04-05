@@ -1,0 +1,201 @@
+/*universal styles*/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+/*parallax styles*/
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+.parallaxLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.group {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  transform-style: inherit;
+  background: 50% 50% / cover;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.group:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: 50% 50% / cover;
+}
+
+/*base styles*/
+
+.base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0) scale(1);
+  z-index: 5;
+}
+
+.base2 {
+  -webkit-transform: translateZ(-50px) scale(1.2);
+  transform: translateZ(-50px) scale(1.2);
+  z-index: 6;
+}
+
+/*group styles*/
+
+
+/* slide over group 2 */
+#group1 {
+  z-index: 8;
+}
+
+#group1 .base {
+  background: white;
+}
+
+/* slide under groups 1 and 3 */
+#group2 {
+  z-index: 6;
+}
+
+#group2 .base {
+
+  background-size: cover;
+}
+
+#group2 .base2 {
+
+  background-size: cover;
+  opacity: 1;
+}
+
+/* slide over group 2*/
+#group3 .base{
+    background: url('../img/arches-2.png') 50% 50% no-repeat;
+    background-size: cover;
+  z-index: -1;
+}
+
+#group3 .base2 {
+  background: url('../img/arches-3.png') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+/*content styles*/
+
+.title {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  font-family: serif;
+  text-align: center;
+  position: absolute;
+  z-index: 999;
+}
+
+.p-one {
+    border-left-style: solid;
+    border-left-color: red;
+  font-size: 20px;
+  color: black;
+  font-family: sans-serif;
+  line-height: 40px;
+  padding: 20px;
+  width: 30%;
+  left: 15%;
+  bottom: 30%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+
+  transform: translateZ(100px) scale(0.6);
+  position: absolute;
+  z-index: 999;
+}
+.p-two {
+    border-left-style: solid;
+    border-left-color: red;
+  font-size: 6em;
+  color: white;
+  text-shadow: 5px 5px rgba(200,200,200,0.8);
+  font-family: sans-serif;
+  line-height: 40px;
+  padding: 20px;
+  width: 70%;
+  left: 40%;
+  bottom: 50%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+
+  transform: translateZ(100px) scale(0.6);
+  position: absolute;
+  z-index: 999;
+}
+
+figure {
+    width: 20%;
+    left: 47%;
+    bottom: 40%;
+    transform: translateZ(200px) scale(0.6);
+    position: absolute;
+    z-index: 999;
+}
+
+img {
+  width: 100%;
+}
+
+.color-box{
+    background-color: #88c6f2;
+    padding: 25px;
+    margin: 25px;
+    width: 30%;
+    height: 20%;
+    left: 40%;
+    bottom: 40%;
+    transform: translateZ(170px) scale(0.7);
+    position: absolute;
+    z-index: 998;
+}
+
+hr{
+    background-color: darkgrey;
+    border: none;
+height: 10px;
+}
